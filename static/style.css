@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f0f14 0%, #1a1a24 100%);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #e8e8ef;
+}
+
+.card {
+  background: #1c1c26;
+  border: 1px solid #2c2c3a;
+  border-radius: 16px;
+  padding: 40px;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  margin: 0 0 4px;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.arrow {
+  color: #ff5c5c;
+}
+
+.subtitle {
+  text-align: center;
+  color: #8b8b9c;
+  margin: 0 0 28px;
+  font-size: 14px;
+}
+
+.field {
+  margin-bottom: 16px;
+}
+
+.field.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.field.row label {
+  font-size: 14px;
+  color: #b0b0c0;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #34344a;
+  background: #14141c;
+  color: #e8e8ef;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #ff5c5c;
+}
+
+select {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #34344a;
+  background: #14141c;
+  color: #e8e8ef;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  background: #ff5c5c;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background: #ff4444;
+}
+
+button:disabled {
+  background: #4a4a5a;
+  cursor: not-allowed;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#progressWrap {
+  margin-top: 20px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #14141c;
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid #2c2c3a;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #ff5c5c, #ff8a5c);
+  transition: width 0.3s ease;
+}
+
+#statusText {
+  margin: 8px 0 0;
+  font-size: 13px;
+  color: #8b8b9c;
+  text-align: center;
+}
+
+#downloadLink {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  padding: 13px;
+  border-radius: 10px;
+  background: #2ecc71;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+#downloadLink:hover {
+  background: #27ae60;
+}
+
+.error {
+  margin-top: 16px;
+  color: #ff5c5c;
+  font-size: 13px;
+  text-align: center;
+}
+
+.disclaimer {
+  margin-top: 24px;
+  font-size: 11px;
+  color: #5a5a6a;
+  text-align: center;
+}

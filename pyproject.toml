@@ -1,0 +1,13 @@
+[project]
+name = "yt2mp4"
+version = "1.0.0"
+description = "YouTube to MP4 converter web app"
+requires-python = ">=3.10"
+dependencies = [
+    "flask>=3.0.3",
+    "yt-dlp>=2024.8.6",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

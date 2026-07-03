@@ -1,0 +1,9 @@
+run = "pip install -r requirements.txt --quiet --break-system-packages; python3 app.py"
+entrypoint = "app.py"
+
+[nix]
+channel = "stable-24_05"
+
+[[ports]]
+localPort = 8080
+externalPort = 80

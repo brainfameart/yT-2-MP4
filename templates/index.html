@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>YouTube → MP4</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div class="card">
+    <h1>YouTube <span class="arrow">→</span> MP4</h1>
+    <p class="subtitle">Paste a link, pick a quality, download the file.</p>
+
+    <div class="field">
+      <input
+        type="text"
+        id="urlInput"
+        placeholder="https://www.youtube.com/watch?v=..."
+        autocomplete="off"
+      />
+    </div>
+
+    <div class="field row">
+      <label for="quality">Quality</label>
+      <select id="quality">
+        <option value="best">Best available</option>
+        <option value="1080">1080p</option>
+        <option value="720">720p</option>
+        <option value="480">480p</option>
+      </select>
+    </div>
+
+    <button id="startBtn">Convert</button>
+
+    <div id="progressWrap" class="hidden">
+      <div class="progress-bar">
+        <div id="progressFill" class="progress-fill"></div>
+      </div>
+      <p id="statusText">Starting…</p>
+    </div>
+
+    <a id="downloadLink" class="hidden" href="#">⬇ Download MP4</a>
+
+    <p id="errorText" class="error hidden"></p>
+
+    <p class="disclaimer">
+      Only convert videos you own or have permission to download.
+    </p>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
